@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Cart</title>
+    <!-- daisyUi and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto">
+    <section class="mt-10">
+        <input class="py-3 px-5 text-xl border" type="text" name="" id="product-name" placeholder="Product">
+        <input class="py-3 px-5 text-xl border" type="text" name="" id="product-quantity" placeholder="Quantity">
+        <button onclick="addProduct()" class="btn bg-[black]  text-white py-3 px-5 rounded-md">Add Product</button>
+    </section>
+
+    <section>
+        <ul id="product-container" class="space-y-1 mt-5">
+
+        </ul>
+    </section>
+
+    <!-- script -->
+    <script src="cart.js"></script>
+</body>
+
+</html>
